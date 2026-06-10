@@ -279,6 +279,11 @@
       <a name="label" val="aluResult"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(1630,920)" name="Probe">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="radix" val="16"/>
+    </comp>
     <comp lib="0" loc="(1630,970)" name="Tunnel">
       <a name="label" val="memAddress"/>
       <a name="width" val="32"/>
@@ -875,7 +880,10 @@
     <wire from="(1250,1300)" to="(1280,1300)"/>
     <wire from="(1260,630)" to="(1300,630)"/>
     <wire from="(1260,660)" to="(1310,660)"/>
+    <wire from="(1270,1100)" to="(1370,1100)"/>
     <wire from="(1270,1380)" to="(1280,1380)"/>
+    <wire from="(1270,960)" to="(1270,1100)"/>
+    <wire from="(1270,960)" to="(1610,960)"/>
     <wire from="(1300,630)" to="(1300,640)"/>
     <wire from="(1300,640)" to="(1310,640)"/>
     <wire from="(1300,800)" to="(1340,800)"/>
@@ -884,10 +892,12 @@
     <wire from="(1340,650)" to="(1360,650)"/>
     <wire from="(1340,800)" to="(1340,810)"/>
     <wire from="(1340,810)" to="(1350,810)"/>
-    <wire from="(1350,1050)" to="(1390,1050)"/>
+    <wire from="(1350,1050)" to="(1370,1050)"/>
     <wire from="(1360,1020)" to="(1390,1020)"/>
     <wire from="(1360,840)" to="(1360,870)"/>
     <wire from="(1360,990)" to="(1380,990)"/>
+    <wire from="(1370,1050)" to="(1370,1100)"/>
+    <wire from="(1370,1050)" to="(1390,1050)"/>
     <wire from="(1380,1000)" to="(1390,1000)"/>
     <wire from="(1380,820)" to="(1400,820)"/>
     <wire from="(1380,990)" to="(1380,1000)"/>
@@ -896,6 +906,8 @@
     <wire from="(1610,1000)" to="(1620,1000)"/>
     <wire from="(1610,1020)" to="(1630,1020)"/>
     <wire from="(1610,1040)" to="(1630,1040)"/>
+    <wire from="(1610,920)" to="(1610,960)"/>
+    <wire from="(1610,920)" to="(1630,920)"/>
     <wire from="(1620,1000)" to="(1630,1000)"/>
     <wire from="(1620,970)" to="(1620,1000)"/>
     <wire from="(1620,970)" to="(1630,970)"/>
@@ -1752,6 +1764,16 @@ d8023 16d80a3 4d8d93 d2283 5da023 4d8d93 d0283 5da023
       <a name="label" val="Zero"/>
       <a name="type" val="output"/>
     </comp>
+    <comp lib="0" loc="(70,780)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="SrcA"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(70,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="SrcB"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="0" loc="(80,410)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="SrcA"/>
@@ -1797,6 +1819,9 @@ d8023 16d80a3 4d8d93 d2283 5da023 4d8d93 d0283 5da023
       <a name="label" val="SrcB"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="1" loc="(130,800)" name="OR Gate">
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="1" loc="(160,590)" name="AND Gate">
       <a name="width" val="32"/>
     </comp>
@@ -1819,6 +1844,7 @@ d8023 16d80a3 4d8d93 d2283 5da023 4d8d93 d0283 5da023
     <wire from="(100,330)" to="(140,330)"/>
     <wire from="(120,160)" to="(140,160)"/>
     <wire from="(120,260)" to="(140,260)"/>
+    <wire from="(130,800)" to="(260,800)"/>
     <wire from="(150,430)" to="(270,430)"/>
     <wire from="(150,510)" to="(230,510)"/>
     <wire from="(150,680)" to="(160,680)"/>
@@ -1835,6 +1861,8 @@ d8023 16d80a3 4d8d93 d2283 5da023 4d8d93 d0283 5da023
     <wire from="(240,460)" to="(290,460)"/>
     <wire from="(250,490)" to="(250,670)"/>
     <wire from="(250,490)" to="(290,490)"/>
+    <wire from="(260,500)" to="(260,800)"/>
+    <wire from="(260,500)" to="(290,500)"/>
     <wire from="(270,430)" to="(270,440)"/>
     <wire from="(270,440)" to="(290,440)"/>
     <wire from="(270,540)" to="(270,730)"/>
@@ -1846,6 +1874,8 @@ d8023 16d80a3 4d8d93 d2283 5da023 4d8d93 d0283 5da023
     <wire from="(350,640)" to="(450,640)"/>
     <wire from="(410,660)" to="(450,660)"/>
     <wire from="(490,650)" to="(510,650)"/>
+    <wire from="(70,780)" to="(80,780)"/>
+    <wire from="(70,820)" to="(80,820)"/>
     <wire from="(80,410)" to="(90,410)"/>
     <wire from="(80,450)" to="(90,450)"/>
     <wire from="(80,490)" to="(90,490)"/>
